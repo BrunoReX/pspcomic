@@ -59,7 +59,7 @@ endif
 ifeq (YES, ${TINYXML_USE_STL})
   DEFS := -DTIXML_USE_STL
 else
-  DEFS :=
+  DEFS := -D_PSP_FW_VERSION=300
 endif
 
 #****************************************************************************

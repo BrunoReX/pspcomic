@@ -13,6 +13,8 @@ psptinyxml:
 	make -C tinyxml -f Makefile.psp
 	mv -f tinyxml/libpsptinyxml.a .
 3xx:
+	make psprar
+	make psptinyxml
 	mkdir -p 3.xx/pspcomic
 	PSP_FW_VERSION=300 make -f Makefile.psp
 	cp -f EBOOT.PBP 3.xx/pspcomic

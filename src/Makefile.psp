@@ -1,7 +1,7 @@
 OBJS = zip/ioapi.o zip/unzip.o pspcomic.o xmlfuncs.o rar.o gui.o gfx.o \
 	language.o font.o utf8_sjis.o
 
-CFLAGS = -G0 -L. -O2 #Normal build (broken)
+CFLAGS = -G0 -L. -O3
 #CFLAGS = -G0 -L. -g -Wall -DDEBUG -DEXPERIMENTAL #Debug build
 CXXFLAGS = $(CFLAGS) -fno-exceptions -fno-rtti
 LIBS = -lSDL -lSDL_image -lpng -lz -ljpeg -lpspunrar -lpsptinyxml \
